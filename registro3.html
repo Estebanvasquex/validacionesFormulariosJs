@@ -34,7 +34,7 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.">
+                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña"   title="hola mundo" required minlength="6" maxlength="12">
                         <label class="input-label" for="password">Contraseña</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -42,7 +42,7 @@
                 <fieldset>
                     <legend class="form__label">Información personal</legend>
                     <div class="input-container">
-                        <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
+                        <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimento" >
                         <label class="input-label" for="birth">Fecha de nacimiento</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -74,9 +74,7 @@
             </form>
         </section>
     </main>
-
-    <!-- Se debe declarar este script que es de tipo module para que pueda importar las funciones de otros archivos -->
-    <script src="./js/app.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
 
